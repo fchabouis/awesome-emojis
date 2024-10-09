@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 20px;
+        }
+
+        .emoji {
+            text-align: center;
+        }
+
+        .emoji img {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Emoji Gallery</h1>
+    <div class="gallery">
+        <!-- Emojis will be listed here -->
+        <div class="emoji">
+            <a href="emojis/lol.png" download>
+                <img src="emojis/lol.png" alt="Emoji lol">
+            </a>
+        </div>
+        <div class="emoji">
+            <a href="emojis/blobaww.png" download>
+                <img src="emojis/blobaww.png" alt="Emoji blobaww">
+            </a>
+        </div>
+        <div class="emoji">
+            <a href="emojis/en-effet.gif" download>
+                <img src="emojis/en-effet.gif" alt="Emoji en-effet">
+            </a>
+        </div>
+        <div class="emoji">
+            <a href="emojis/red-panda-dance.gif" download>
+                <img src="emojis/red-panda-dance.gif" alt="Emoji red-panda-dance">
+            </a>
+        </div>
+        <!-- Add more emojis as needed -->
+    </div>
+</body>
+
+</html>
