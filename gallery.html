@@ -8,19 +8,21 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            padding: 20px;
+        }
+
+        .title {
+            text-align: center;
+            padding-bottom: 50px;
         }
 
         .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
         }
 
         .emoji {
             text-align: center;
+            padding-bottom: 20px;
         }
 
         .emoji img {
@@ -32,7 +34,10 @@
 </head>
 
 <body>
-    <h1>Awesome emojis</h1>
+    <div class="title">
+        <h1>Awesome emojis</h1>
+        <div>Click on an emoji to download it.</div>
+        </div>
     <div class="gallery">
         <!-- Emojis will be listed here -->
         <div class="emoji">
